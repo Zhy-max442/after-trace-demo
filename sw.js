@@ -1,10 +1,12 @@
 /* After Trace demo service worker — cache shell for offline open */
-const CACHE = 'at-demo-v9';
+const CACHE = 'at-demo-v10';
 const SHELL = [
   './',
   './index.html',
   './manifest.webmanifest',
   './logo.png',
+  './logo.svg',
+  './logo-66.png',
   './icon-192.png',
   './icon-512.png',
   './icon-512-maskable.png',
