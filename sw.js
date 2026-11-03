@@ -1,5 +1,5 @@
 /* After Trace demo service worker — cache shell for offline open */
-const CACHE = 'at-demo-v8';
+const CACHE = 'at-demo-v9';
 const SHELL = [
   './',
   './index.html',
@@ -35,7 +35,7 @@ self.addEventListener('fetch', event => {
     (async () => {
       const cache = await caches.open(CACHE);
       try {
-        const fresh = await fetch(req);
+        const fresh = await fetch(req, req.mode === 'navigate' ? { cache: 'no-store' } : undefined);
         if (fresh && fresh.ok && (url.pathname.includes('/after-trace-demo/') || url.pathname.endsWith('/'))) {
           cache.put(req, fresh.clone());
         }
