@@ -1,5 +1,5 @@
 /* After Trace demo service worker — cache shell for offline open */
-const CACHE = 'at-demo-v7';
+const CACHE = 'at-demo-v8';
 const SHELL = [
   './',
   './index.html',

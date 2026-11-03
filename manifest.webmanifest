@@ -6,8 +6,8 @@
   "scope": "/after-trace-demo/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#F2EDE4",
-  "theme_color": "#F2EDE4",
+  "background_color": "#f2ede4",
+  "theme_color": "#f2ede4",
   "lang": "zh-CN",
   "icons": [
     {
